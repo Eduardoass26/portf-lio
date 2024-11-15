@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do Tempo - Descrição</title>
+    <link rel="stylesheet" href="tempo.css">
+</head>
+<body>
+    <div class="box">
+    <video src="public/imgs_projetos/tempo/202411122018.mp4" controls></video>
+    <h1>Previsão do Tempo - Descrição</h1>
+
+    <p>Este código JavaScript implementa uma aplicação simples que busca informações meteorológicas de uma cidade usando a API OpenWeatherMap.</p>
+
+    <h2>Funcionalidades:</h2>
+    <ul>
+        <li><strong>Busca de dados:</strong> A função `buscarcidade()` faz uma requisição à API OpenWeatherMap usando a função `fetch()`. A URL da requisição inclui a chave da API (`api_key`), a cidade a ser pesquisada e parâmetros adicionais para idioma (`lang`) e unidades de temperatura (`units`).</li>
+        <li><strong>Exibição dos dados:</strong> A função `colocar_dados_tela()` recebe os dados da API e exibe as informações relevantes na tela:</li>
+        <ul>
+            <li>Nome da cidade (`cidade_buscada`)</li>
+            <li>Temperatura (`temperatura`)</li>
+            <li>Descrição do clima (`ceu`)</li>
+            <li>Umidade (`umidade`)</li>
+            <li>Ícone do tempo (`img_tempo`)</li>
+        </ul>
+        <li><strong>Interface:</strong> A função `cidade()` obtém o nome da cidade digitado pelo usuário no campo de entrada (`#cidade`) e chama a função `buscarcidade()` para buscar os dados meteorológicos.</li>
+    </ul>
+
+    <h2>Como funciona:</h2>
+    <ol>
+        <li>O usuário digita o nome da cidade no campo de entrada.</li>
+        <li>Ao clicar no botão (não mostrado no código), a função `cidade()` é chamada.</li>
+        <li>A função `cidade()` obtém o nome da cidade do campo de entrada e chama a função `buscarcidade()`. </li>
+        <li>A função `buscarcidade()` faz uma requisição à API OpenWeatherMap para obter os dados meteorológicos da cidade.</li>
+        <li>A função `colocar_dados_tela()` exibe os dados retornados pela API na tela.</li>
+    </ol>
+
+    <h2>Considerações:</h2>
+    <ul>
+        
+        <li><strong>Tratamento de erros:</strong> O código não inclui tratamento de erros para casos como cidade inválida ou falha na conexão com a API.</li>
+        <li><strong>Personalização:</strong> A aplicação pode ser personalizada com mais recursos, como:</li>
+        <ul>
+            <li>Previsão do tempo para os próximos dias</li>
+            <li>Mapa com a localização da cidade</li>
+            <li>Histórico de buscas</li>
+        </ul>
+    </ul>
+<img src="public/imgs_projetos/tempo/Captura de tela 2024-11-12 204018.png" alt="">
+</div>
+
+<div class="ferramentas_usadas">
+    <h2>Ferramentas Usadas</h2>
+    <p>vs code</p>
+    <img src="public/imgs_ferramentas/vscode.jpeg" alt="">
+    <p>html</p>
+    <img src="public/imgs_ferramentas/html.jpeg" alt="">
+    <p>css</p>
+    <img src="public/imgs_ferramentas/css.png" alt="">
+    <p>javaScript</p>
+    <img src="public/imgs_ferramentas/js.jpeg">
+</div>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logistica</title>
+    <link rel="stylesheet" href="logistica.css">
+</head>
+<body>
+    <div class="box">
+        <video src="public/imgs_projetos/logistica/202411141913.mp4" controls></video>
+        <h1>Explicação do Código</h1>
+    <p>Este código é responsável por gerenciar uma interface de login e navegação para uma área de controle voltada para funcionários.</p>
+
+    <h2>1. Variáveis e Constantes Iniciais</h2>
+    <p><code>const apagar_tela</code> é uma constante vazia usada para limpar o conteúdo de elementos. As variáveis <code>login_funcionario</code> e <code>senha_funcionario</code> armazenam o nome de usuário e senha fixos para autenticação (login e senha são respectivamente <code>"Keli&Eduardo"</code> e <code>"20082022"</code>).</p>
+
+    <h2>2. Função <code>area_login()</code></h2>
+    <p>Esta função exibe a interface inicial de login.</p>
+    <ul>
+        <li><code>requisicao_login</code> contém a estrutura HTML para o formulário de login, incluindo campos de usuário e senha e um botão de login.</li>
+        <li>O conteúdo de <code>requisicao_login</code> é inserido no elemento com o ID <code>menu_insercao</code>.</li>
+        <li>Uma imagem de fundo é adicionada à área de resultados por meio de <code>inserir_tela_de_fundo</code>, que é inserida no elemento <code>menu_resultados</code>.</li>
+    </ul>
+
+    <h2>3. Função <code>efetuar_login()</code></h2>
+    <p>Esta função executa a autenticação do usuário ao verificar as credenciais inseridas.</p>
+    <ul>
+        <li>Lê os valores de nome de usuário e senha dos campos <code>nome_usuario</code> e <code>senha_usuario</code>.</li>
+        <li>Limpa esses campos após a leitura utilizando a variável <code>apagar_tela</code>.</li>
+        <li>Verifica as credenciais:</li>
+        <ul>
+            <li>Se o nome e a senha estão corretos, carrega a interface de controle para o funcionário com diferentes botões de controle (ex: NOME PRODUTO, CÓDIGO DO PRODUTO, etc.).</li>
+            <li>Se o nome de usuário estiver correto mas a senha errada, exibe um alerta de senha incorreta.</li>
+            <li>Se ambos estiverem incorretos, exibe um alerta indicando que o usuário não está cadastrado e orienta o contato com um gestor.</li>
+        </ul>
+    </ul>
+
+    <h2>4. Função <code>tela_pesquisapornome()</code></h2>
+    <p>Esta função exibe a interface para consulta de produtos por nome, inserindo um campo de entrada para o nome do produto e um botão de busca.</p>
+    <ul>
+        <li>Limpa o conteúdo de <code>menu_insercao</code> e insere a interface da busca de produtos.</li>
+    </ul>
+
+    <h2>5. Função <code>buscar_nome_produto()</code></h2>
+    <p>Esta função está incompleta. Ela apenas limpa a área de <code>menu_resultados</code>, mas ainda não realiza nenhuma busca específica.</p>
+
+    <h2>6. Execução Inicial</h2>
+    <p>A função <code>area_login()</code> é chamada diretamente ao final do código para exibir a tela de login assim que o script é carregado.</p>
+
+    <h2>Considerações de Melhoria</h2>
+    <p>Este código poderia ser melhorado com boas práticas, como o uso de variáveis para manipular estados ao invés de strings fixas de login e senha, além de implementar mais segurança nas operações de login.</p>
+
+    </div>
+
+    <div class="ferramentas_usadas">
+        <h2>Ferramentas Usadas</h2>
+        <p>vs code</p>
+        <img src="public/imgs_ferramentas/vscode.jpeg" alt="">
+        <p>html</p>
+        <img src="public/imgs_ferramentas/html.jpeg" alt="">
+        <p>css</p>
+        <img src="public/imgs_ferramentas/css.png" alt="">
+        <p>javaScript</p>
+        <img src="public/imgs_ferramentas/js.jpeg">
+    </div>
+</body>
+</html>

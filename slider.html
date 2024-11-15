@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="slider.css">
+</head>
+<body>
+    <div class="box">
+        <video src="public/imgs_projetos/slider/202411131909.mp4" controls></video>
+        <a href="https://github.com/Eduardoass26/projetos/tree/main/projetos/slider">clique aqui para ver o código completo</a>
+        <h2>Projeto de Carrossel de Imagens</h2>
+    <p>Este é um projeto de carrossel de imagens simples em HTML, CSS e JavaScript. A estrutura HTML define um carrossel que exibe uma série de imagens lado a lado, com botões de navegação para avançar ou retornar a imagem destacada.</p>
+
+    <h3>Estrutura e Funcionamento:</h3>
+    
+    <h4>HTML:</h4>
+    <ul>
+        <li>O HTML contém três imagens (<code>img1</code>, <code>img2</code>, <code>img3</code>) dentro de uma <code>div</code> com a classe <code>carrossel-container</code>.</li>
+        <li>Cada imagem é identificada por um ID único e tem tamanho de 400x400 pixels.</li>
+        <li>Os botões "voltar" e "avançar" permitem navegar entre as imagens.</li>
+    </ul>
+
+    <h4>JavaScript:</h4>
+    <ul>
+        <li>Uma variável <code>imagemAtual</code> é usada para rastrear qual imagem está ativa.</li>
+        <li>A função <code>destacarImagem</code> ajusta a opacidade das imagens, deixando a imagem ativa com <code>opacity: 1</code> e as demais com <code>opacity: 0.3</code>.</li>
+        <li>As funções <code>avancar</code> e <code>retornar</code> mudam o valor de <code>imagemAtual</code> para navegar para a próxima ou a imagem anterior, respectivamente. Quando o índice ultrapassa o limite, ele é redefinido para o começo ou o fim da lista.</li>
+    </ul>
+
+    <h4>Interatividade:</h4>
+    <p>O carrossel é iniciado com a primeira imagem destacada e, ao clicar nos botões de navegação, a imagem atual é atualizada com destaque, enquanto as outras ficam esmaecidas.</p>
+
+    <p>Esse projeto é útil para exibir uma sequência de imagens com um efeito de foco e é fácil de adaptar para mais imagens ou novas funcionalidades.</p>
+
+    </div>
+
+    <div class="ferramentas_usadas">
+        <h2>Ferramentas Usadas</h2>
+        <p>vs code</p>
+        <img src="public/imgs_ferramentas/vscode.jpeg" alt="">
+        <p>html</p>
+        <img src="public/imgs_ferramentas/html.jpeg" alt="">
+        <p>css</p>
+        <img src="public/imgs_ferramentas/css.png" alt="">
+        <p>javaScript</p>
+        <img src="public/imgs_ferramentas/js.jpeg">
+    </div>
+</body>
+</html>
