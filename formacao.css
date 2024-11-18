@@ -67,6 +67,9 @@ h1{
         width: 90%;
     }
     .certificados img {
-        width: 150px; /* Ajuste para telas menores */
+        width: 100%; /* Ajuste para telas menores */
+    }
+    .cursando img{
+        width: 100%;
     }
 }

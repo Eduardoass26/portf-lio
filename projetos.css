@@ -94,3 +94,31 @@ a{
     border-radius: 30px;
     color: white;
 }
+@media (max-width: 768px) {
+   
+    #formacao{
+        font-size: 20px;
+        width: 150px;
+        height: 40px;
+        position: fixed;
+        top: 10px;
+        left: 150px;
+        background-color: #ff9800;
+    }
+    .projetos_vitrine{
+        width: 100%;
+        margin-top: 100px;
+    }
+    .projeto{
+        width: 100%;
+    }
+    .img_projeto{
+        width: 99%;
+    }
+    .img_projeto img{
+        width: 96%;
+    }
+    .descricao_projeto{
+        width: 100%;
+    }
+}

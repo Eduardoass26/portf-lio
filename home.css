@@ -41,3 +41,37 @@ button:hover {
     background-image: url("public/imgs_home/Apresentação de Portifólio de Fotografia Moderno Preto e Branco.png");
     background-size: cover;
 }
+.responsivitybar{
+    display: none;
+}
+@media (max-width: 768px) {
+   .container{
+    background-image: url("public/imgs_home/IMG_20211107_083623279-removebg-preview (1).png");
+    width: 99%;
+   }
+   .responsivitybar{
+    width: 100%;
+    height: 40%;
+    background-color: rgb(22, 22, 22, 0.5);
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   .responsivitybar img{
+    width: 30%;
+    
+   }
+   .responsivitybar p{
+    text-decoration: none;
+    font-size: 20px;
+    color: #ff9800;
+   }
+   #portfolio{
+    position: fixed;
+    left: 11%;
+    bottom: 5px;
+   }
+}

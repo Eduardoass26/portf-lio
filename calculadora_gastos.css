@@ -77,3 +77,8 @@ ul {
 .ferramentas_usadas img:hover {
     transform: scale(1.1);
 }
+@media (max-width: 768px) {
+    .box, .ferramentas_usadas {
+        width: 90%;
+    }
+}
